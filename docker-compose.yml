@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: codealpha-webserver
+    ports:
+      - "8088:80"
+    restart: unless-stopped
